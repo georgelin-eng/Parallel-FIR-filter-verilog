@@ -15,11 +15,11 @@ module tb_FIR_test1 ();
     reg [31:0] signal;
 
     // FIR module declaration
-    FIR_filter #(.order(2), .FIRfilterCoeffs({1, 0})) DUT
+    FIR_filter #(.order(15)) DUT
     (
         .clk(clk), 
         .reset(reset),
-        .incoming_signal_x (x),
+        .incoming_signal_x (signal),
         .output_signal_y (y)
     );
     
@@ -47,6 +47,7 @@ module tb_FIR_test1 ();
     parameter numPeriods = 2;
 
     parameter noisefreq = 10.0; // 10MHz signal
+    parameter noiseamplitude = 0.5;
     
     reg [7:0] counter = 0;
 
@@ -70,7 +71,7 @@ module tb_FIR_test1 ();
 
                 // white noise generation with flipping the sign of the random number depending on the value of counter. 
                 if (counter [3] == 1'b1) begin
-                    white_noise <= $urandom_range(0, 120);
+                    white_noise <= $urandom_range(0, 120) * noiseamplitude;
                     counter = 0;
                 end
 

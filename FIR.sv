@@ -5,19 +5,28 @@
 
 */
 
-// Synchronizes to a single clock reads from input one number at a time
 module FIR_filter (
     input clk, 
     input reset,
 	input [31:0] incoming_signal_x, 
-    output reg [31:0] output_signal_y);
+    output [31:0] output_signal_y);
 
-    // FIR filter parameters
-    parameter order = 10;
+    reg acc_signal;
+
+    /* FIR filter parameters: 
+        order - number of FIR filter coefficients
+
+        scale - When passing the FIR filter coefficients to this module, ensure that they are integer values
+                otherwise multiplication with negatives can create unintended behaviour. All FIR filter coefficients should be 
+                scaled up by 2^k when passed to this module so set this value to k so that values are down by 2^k
+
+    */
+
+    parameter order = 20;
+    parameter scale = 9; 
     parameter int FIRfilterCoeffs [order] = 
     '{
-        10, 3, 2, 1, -3,
-        1, -3, -5, 6, 6
+        -51, -104, 80, 211, -247, -268, 1254, 2393, 1254, -268, -247, 211, 80, -104, -51
     };
     
 	reg [31:0] delayLine [order-1:0];      // 32 bit registers used as buffers to store incoming data for processing
@@ -67,13 +76,16 @@ module FIR_filter (
         for (j = 0; j < order; j++) begin
             multiplyResult[j] <= FIRfilterCoeffs[j] * delayLine[j];
         end
-
     end
 
     always_comb begin
         output_signal_y = 0;
-        for (k = 0; k < order; k++)
-            output_signal_y += multiplyResult[k];
+        for (k = 0; k < order; k++) begin
+            acc_signal += multiplyResult[k];
+        end
     end
+
+    // output signal is a scaled down version of the accumulated signal to account for the initial scaling up down
+    assign output_signal_y = acc_signal >>> scale;
   
 endmodule
