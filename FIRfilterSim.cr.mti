@@ -1,0 +1,15 @@
+{C:/Users/flipa/OneDrive - UBC/Projects/FIR Filter in Verilog/FIR.sv} {1 {vlog -work work -sv -stats=none {C:/Users/flipa/OneDrive - UBC/Projects/FIR Filter in Verilog/FIR.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module FIR_filter
+
+Top level modules:
+	FIR_filter
+
+} {} {}} {C:/Users/flipa/OneDrive - UBC/Projects/FIR Filter in Verilog/clkSync.sv} {1 {vlog -work work -sv -stats=none {C:/Users/flipa/OneDrive - UBC/Projects/FIR Filter in Verilog/clkSync.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module clkSync
+
+Top level modules:
+	clkSync
+
+} {} {}}
