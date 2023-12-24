@@ -11,7 +11,7 @@ module FIR_filter (
 	input [31:0] incoming_signal_x, 
     output [31:0] output_signal_y);
 
-    reg acc_signal;
+    reg [31:0] acc_signal;
 
     /* FIR filter parameters: 
         order - number of FIR filter coefficients
@@ -20,13 +20,66 @@ module FIR_filter (
                 otherwise multiplication with negatives can create unintended behaviour. All FIR filter coefficients should be 
                 scaled up by 2^k when passed to this module so set this value to k so that values are down by 2^k
 
+                set to 0 because anything else is wrong right now. Find another way to fix offsets
     */
 
-    parameter order = 20;
-    parameter scale = 9; 
+    parameter order = 53;
+    parameter scale = 0; 
     parameter int FIRfilterCoeffs [order] = 
     '{
-        -51, -104, 80, 211, -247, -268, 1254, 2393, 1254, -268, -247, 211, 80, -104, -51
+        -764 ,
+        -965 ,
+        -1236 ,
+        -1588 ,
+        -2004 ,
+        -2443 ,
+        -2832 ,
+        -3071 ,
+        -3041 ,
+        -2608 ,
+        -1637 ,
+        0 ,
+        2405 ,
+        5646 ,
+        9747 ,
+        14676 ,
+        20348 ,
+        26618 ,
+        33288 ,
+        40120 ,
+        46842 ,
+        53167 ,
+        58813 ,
+        63516 ,
+        67051 ,
+        69245 ,
+        69989 ,
+        69245 ,
+        67051 ,
+        63516 ,
+        58813 ,
+        53167 ,
+        46842 ,
+        40120 ,
+        33288 ,
+        26618 ,
+        20348 ,
+        14676 ,
+        9747 ,
+        5646 ,
+        2405 ,
+        0 ,
+        -1637 ,
+        -2608 ,
+        -3041 ,
+        -3071 ,
+        -2832 ,
+        -2443 ,
+        -2004 ,
+        -1588 ,
+        -1236 ,
+        -965 ,
+        -764
     };
     
 	reg [31:0] delayLine [order-1:0];      // 32 bit registers used as buffers to store incoming data for processing
@@ -79,7 +132,7 @@ module FIR_filter (
     end
 
     always_comb begin
-        output_signal_y = 0;
+        acc_signal = 0;
         for (k = 0; k < order; k++) begin
             acc_signal += multiplyResult[k];
         end

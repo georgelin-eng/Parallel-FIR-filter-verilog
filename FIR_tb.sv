@@ -1,4 +1,4 @@
-`timescale 100ps / 1ps
+// `timescale 100ps / 1ps
 /*
     Test1:
 
@@ -15,7 +15,7 @@ module tb_FIR_test1 ();
     reg [31:0] signal;
 
     // FIR module declaration
-    FIR_filter #(.order(15)) DUT
+    FIR_filter DUT
     (
         .clk(clk), 
         .reset(reset),
@@ -51,36 +51,56 @@ module tb_FIR_test1 ();
     
     reg [7:0] counter = 0;
 
-    initial begin
-        @ (posedge clk) reset = 1; @ (posedge clk) reset = 0;
-        x = 0; 
-        white_noise = 0;
+    // initial begin
+    //     @ (posedge clk) reset = 1; @ (posedge clk) reset = 0;
+    //     x = 0; 
+    //     white_noise = 0;
 
-        period = 1/frequency * 1000;
-        period_noise = 1/noisefreq * 1000;
-        period_clkCycleNormalized = period;
+    //     period = 1/frequency * 1000;
+    //     period_noise = 1/noisefreq * 1000;
+    //     period_clkCycleNormalized = period;
         
-        for (i = 0; i < period_clkCycleNormalized * numPeriods; i = i +1) begin
-            time_normalized = 2 * pi / period_clkCycleNormalized * i;
-            time_noise = 2 * pi / period_noise * i;
+    //     for (i = 0; i < period_clkCycleNormalized * numPeriods; i = i +1) begin
+    //         time_normalized = 2 * pi / period_clkCycleNormalized * i;
+    //         time_noise = 2 * pi / period_noise * i;
             
-            @ (posedge clk) begin
-                x <= amplitude*$sin(time_normalized);
-                noise <= amplitude* $sin(time_noise);
-                counter = counter + 1;
+    //         @ (posedge clk) begin
+    //             x <= amplitude*$sin(time_normalized);
+    //             noise <= amplitude* $sin(time_noise);
+    //             counter = counter + 1;
 
-                // white noise generation with flipping the sign of the random number depending on the value of counter. 
-                if (counter [3] == 1'b1) begin
-                    white_noise <= $urandom_range(0, 120) * noiseamplitude;
-                    counter = 0;
-                end
+    //             // white noise generation with flipping the sign of the random number depending on the value of counter. 
+    //             if (counter [3] == 1'b1) begin
+    //                 white_noise <= $urandom_range(0, 120) * noiseamplitude;
+    //                 counter = 0;
+    //             end
 
-                if (counter [2] == 1'b1)
-                    white_noise <= -white_noise;
+    //             if (counter [2] == 1'b1)
+    //                 white_noise <= -white_noise;
 
-                signal <= x + noise + white_noise;
-            end
-        end
+    //             signal <= x + noise + white_noise;
+    //         end
+    //     end
+    //     #10;
+    //     $stop;
+    // end
+
+    integer outfile0; //file descriptor
+
+    initial begin
+        // reset
+        @ (posedge clk) reset = 1; @ (posedge clk) reset = 0;
+
+        outfile0=$fopen("test_signal.txt","r");   //"r" means reading and "w" means writing
+        //read line by line.
+        while (! $feof(outfile0)) begin //read until an "end of file" is reached.
+            $fscanf(outfile0,"%d\n",signal); //scan each line and get the value as an hexadecimal, use %b for binary and %d for decimal.
+            @ (posedge clk);
+        end 
+
+        //once reading and writing is finished, close the file.
+        $fclose(outfile0);
+
         #10;
         $stop;
     end
