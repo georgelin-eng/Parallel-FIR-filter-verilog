@@ -50,41 +50,6 @@ module tb_FIR_test1 ();
     parameter noiseamplitude = 0.5;
     
     reg [7:0] counter = 0;
-
-    // initial begin
-    //     @ (posedge clk) reset = 1; @ (posedge clk) reset = 0;
-    //     x = 0; 
-    //     white_noise = 0;
-
-    //     period = 1/frequency * 1000;
-    //     period_noise = 1/noisefreq * 1000;
-    //     period_clkCycleNormalized = period;
-        
-    //     for (i = 0; i < period_clkCycleNormalized * numPeriods; i = i +1) begin
-    //         time_normalized = 2 * pi / period_clkCycleNormalized * i;
-    //         time_noise = 2 * pi / period_noise * i;
-            
-    //         @ (posedge clk) begin
-    //             x <= amplitude*$sin(time_normalized);
-    //             noise <= amplitude* $sin(time_noise);
-    //             counter = counter + 1;
-
-    //             // white noise generation with flipping the sign of the random number depending on the value of counter. 
-    //             if (counter [3] == 1'b1) begin
-    //                 white_noise <= $urandom_range(0, 120) * noiseamplitude;
-    //                 counter = 0;
-    //             end
-
-    //             if (counter [2] == 1'b1)
-    //                 white_noise <= -white_noise;
-
-    //             signal <= x + noise + white_noise;
-    //         end
-    //     end
-    //     #10;
-    //     $stop;
-    // end
-
     integer outfile0; //file descriptor
 
     initial begin

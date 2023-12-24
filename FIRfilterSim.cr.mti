@@ -1,9 +1,9 @@
-{C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_tb.sv}
+{C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR.sv} {1 {vlog -work work -sv -stats=none {C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_FIR_test1
+-- Compiling module FIR_filter
 
 Top level modules:
-	tb_FIR_test1
+	FIR_filter
 
 } {} {}} {C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/clkSync.sv} {1 {vlog -work work -sv -stats=none {C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/clkSync.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
