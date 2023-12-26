@@ -5,7 +5,7 @@
 
 */
 
-module FIR_filter (
+module FIR_filter_DirectForm (
     input clk, 
     input reset,
 	input [31:0] incoming_signal_x, 

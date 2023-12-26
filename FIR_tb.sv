@@ -7,7 +7,7 @@
 
 */
 
-module tb_FIR_test1 ();
+module tb_FIR_directForm ();
 
     reg clk, reset;
     reg [31:0] x;
@@ -15,7 +15,7 @@ module tb_FIR_test1 ();
     reg [31:0] signal;
 
     // FIR module declaration
-    FIR_filter DUT
+    FIR_filter_DirectForm DUT
     (
         .clk(clk), 
         .reset(reset),
@@ -23,33 +23,9 @@ module tb_FIR_test1 ();
         .output_signal_y (y)
     );
     
-    integer i;
-    real    time_normalized, time_noise;
-    real    period, period_noise;
-    int     period_clkCycleNormalized;
-    int     white_noise;
-    real    pi = 3.14159265358979323;
-
     /*
-        Generates a single sin wave 
-
-        Simulation Parameters:
-        amplitude  : controls the magnitude of the underlying sin function
-        frequency  : given in Mhz. Ensure that it is listed as a decimal since the period is calculated as 1/f and using an integer results in zero instead of a real. 
-        numPeriods :
-        
-        Noise characteristics
-
-    */
-
-    parameter frequency = 0.5; // 500 kHz signal
-    parameter amplitude = 100;
-    parameter numPeriods = 2;
-
-    parameter noisefreq = 10.0; // 10MHz signal
-    parameter noiseamplitude = 0.5;
     
-    reg [7:0] counter = 0;
+    */
     integer outfile0; //file descriptor
 
     initial begin
