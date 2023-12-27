@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Tue Dec 26 18:31:29 2023
+Analysis & Synthesis Status : Successful - Tue Dec 26 18:39:18 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : FIR_filter
 Top-level Entity Name : FIR_top
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 2080
+Total registers : 1728
 Total pins : 65
 Total virtual pins : 0
 Total block memory bits : 0
-Total DSP Blocks : 128
+Total DSP Blocks : 102
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0

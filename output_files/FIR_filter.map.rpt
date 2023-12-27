@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FIR_filter
-Tue Dec 26 18:31:29 2023
+Tue Dec 26 18:39:18 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -15,7 +15,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis DSP Block Usage Summary
   9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: FIR_adderTree:filter
+ 10. Parameter Settings for User Entity Instance: FIR_filter_DirectForm:filter
  11. Post-Synthesis Netlist Statistics for Top Partition
  12. Elapsed Time Per Partition
  13. Analysis & Synthesis Messages
@@ -44,17 +44,17 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Dec 26 18:31:29 2023       ;
+; Analysis & Synthesis Status     ; Successful - Tue Dec 26 18:39:18 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; FIR_filter                                  ;
 ; Top-level Entity Name           ; FIR_top                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2080                                        ;
+; Total registers                 ; 1728                                        ;
 ; Total pins                      ; 65                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 128                                         ;
+; Total DSP Blocks                ; 102                                         ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
@@ -164,7 +164,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 ;     Processor 5            ;   0.0%      ;
@@ -175,14 +175,14 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                       ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
-; FIR_parallel.sv                  ; yes             ; User SystemVerilog HDL File        ; C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_parallel.sv ;         ;
-; fir_top.sv                       ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/fir_top.sv      ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; FIR_direct.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_direct.sv ;         ;
+; fir_top.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/fir_top.sv    ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -190,36 +190,36 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 1292      ;
+; Estimate of Logic utilization (ALMs needed) ; 1026      ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 1508      ;
+; Combinational ALUT usage for logic          ; 972       ;
 ;     -- 7 input functions                    ; 0         ;
 ;     -- 6 input functions                    ; 0         ;
 ;     -- 5 input functions                    ; 0         ;
 ;     -- 4 input functions                    ; 0         ;
-;     -- <=3 input functions                  ; 1508      ;
+;     -- <=3 input functions                  ; 972       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 2080      ;
+; Dedicated logic registers                   ; 1728      ;
 ;                                             ;           ;
 ; I/O pins                                    ; 65        ;
 ;                                             ;           ;
-; Total DSP Blocks                            ; 128       ;
+; Total DSP Blocks                            ; 102       ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 2080      ;
-; Total fan-out                               ; 13321     ;
-; Average fan-out                             ; 3.46      ;
+; Maximum fan-out                             ; 1728      ;
+; Total fan-out                               ; 9426      ;
+; Average fan-out                             ; 3.21      ;
 +---------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+---------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name   ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+---------------+--------------+
-; |FIR_top                   ; 1508 (0)            ; 2080 (32)                 ; 0                 ; 128        ; 65   ; 0            ; |FIR_top                      ; FIR_top       ; work         ;
-;    |FIR_adderTree:filter|  ; 1508 (1508)         ; 2048 (2048)               ; 0                 ; 128        ; 0    ; 0            ; |FIR_top|FIR_adderTree:filter ; FIR_adderTree ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+---------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                       ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Entity Name           ; Library Name ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+-----------------------+--------------+
+; |FIR_top                          ; 972 (0)             ; 1728 (32)                 ; 0                 ; 102        ; 65   ; 0            ; |FIR_top                              ; FIR_top               ; work         ;
+;    |FIR_filter_DirectForm:filter| ; 972 (972)           ; 1696 (1696)               ; 0                 ; 102        ; 0    ; 0            ; |FIR_top|FIR_filter_DirectForm:filter ; FIR_filter_DirectForm ; work         ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -228,11 +228,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+-------------+
 ; Statistic                       ; Number Used ;
 +---------------------------------+-------------+
-; Two Independent 18x18           ; 64          ;
-; Sum of two 18x18                ; 64          ;
-; Total number of DSP blocks      ; 128         ;
+; Two Independent 18x18           ; 51          ;
+; Independent 18x18 plus 36       ; 29          ;
+; Sum of two 18x18                ; 22          ;
+; Total number of DSP blocks      ; 102         ;
 ;                                 ;             ;
-; Fixed Point Unsigned Multiplier ; 192         ;
+; Fixed Point Unsigned Multiplier ; 124         ;
 +---------------------------------+-------------+
 
 
@@ -241,7 +242,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2080  ;
+; Total registers                              ; 1728  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -251,13 +252,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_adderTree:filter ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; order          ; 64    ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIR_filter_DirectForm:filter                                           ;
++-----------------+----------------------------------------------------------------------------------+----------------+
+; Parameter Name  ; Value                                                                            ; Type           ;
++-----------------+----------------------------------------------------------------------------------+----------------+
+; order           ; 53                                                                               ; Signed Integer ;
+; scale           ; 0                                                                                ; Signed Integer ;
+; FIRfilterCoeffs ; (-764,-965,-1236,-1588,-2004,-2443,-2832,-3071,-3041,-2608,-1637,0,2405,5646,974 ; Array/Record   ;
+; FIRfilterCoeffs ; 7,14676,20348,26618,33288,40120,46842,53167,58813,63516,67051,69245,69989,69245, ;                ;
+; FIRfilterCoeffs ; 67051,63516,58813,53167,46842,40120,33288,26618,20348,14676,9747,5646,2405,0,-16 ;                ;
+;                 ; 37,-2608,-3041,-3071,-2832,-2443,-2004,-1588,-1236,-965,-764)                    ;                ;
++-----------------+----------------------------------------------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -266,19 +272,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 2080                        ;
-;     plain             ; 2080                        ;
-; arriav_lcell_comb     ; 1508                        ;
-;     arith             ; 32                          ;
-;         2 data inputs ; 32                          ;
-;     shared            ; 1476                        ;
-;         2 data inputs ; 72                          ;
-;         3 data inputs ; 1404                        ;
-; arriav_mac            ; 128                         ;
+; arriav_ff             ; 1728                        ;
+;     plain             ; 1728                        ;
+; arriav_lcell_comb     ; 972                         ;
+;     shared            ; 972                         ;
+;         2 data inputs ; 36                          ;
+;         3 data inputs ; 936                         ;
+; arriav_mac            ; 102                         ;
 ; boundary_port         ; 65                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.10                        ;
-; Average LUT depth     ; 5.21                        ;
+; Max LUT depth         ; 7.10                        ;
+; Average LUT depth     ; 4.12                        ;
 +-----------------------+-----------------------------+
 
 
@@ -287,7 +291,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -297,35 +301,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Dec 26 18:31:10 2023
+    Info: Processing started: Tue Dec 26 18:39:00 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FIR_filter -c FIR_filter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file fir_direct.sv
+    Info (12023): Found entity 1: FIR_filter_DirectForm File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_direct.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fir_parallel.sv
     Info (12023): Found entity 1: FIR_adderTree File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_parallel.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fir_tb.sv
     Info (12023): Found entity 1: tb_FIR_directForm File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_tb.sv Line: 10
-Info (12021): Found 1 design units, including 1 entities, in source file fir.sv
-    Info (12023): Found entity 1: FIR_filter_DirectForm File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR.sv Line: 1
+Warning (12019): Can't analyze file -- file FIR.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file clksync.sv
     Info (12023): Found entity 1: clkSync File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/clkSync.sv Line: 18
-Warning (12125): Using design file fir_top.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Info (12021): Found 1 design units, including 1 entities, in source file fir_top.sv
     Info (12023): Found entity 1: FIR_top File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/fir_top.sv Line: 1
 Info (12127): Elaborating entity "FIR_top" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at fir_top.sv(9): object "output_signalReg" assigned a value but never read File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/fir_top.sv Line: 9
-Info (12128): Elaborating entity "FIR_adderTree" for hierarchy "FIR_adderTree:filter" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/fir_top.sv Line: 11
+Info (12128): Elaborating entity "FIR_filter_DirectForm" for hierarchy "FIR_filter_DirectForm:filter" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/fir_top.sv Line: 11
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3781 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2867 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 33 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 3588 logic cells
-    Info (21062): Implemented 128 DSP elements
+    Info (21061): Implemented 2700 logic cells
+    Info (21062): Implemented 102 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4939 megabytes
-    Info: Processing ended: Tue Dec 26 18:31:29 2023
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Peak virtual memory: 4935 megabytes
+    Info: Processing ended: Tue Dec 26 18:39:18 2023
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:14
 
 
