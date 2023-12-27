@@ -1,10 +1,3 @@
-/*
-	Direct form implementation of an FIR filter
-
-    Receives an incoming 
-
-*/
-
 module FIR_filter_DirectForm (
     input clk, 
     input reset,

@@ -33,6 +33,31 @@ r1
 Z4 o-work work -sv
 Z5 tCvgOpt 0
 nclk@sync
+vFIR_adderTree
+R0
+!s110 1703639380
+!i10b 1
+!s100 o0TcD7aa<n3LQ=1=AF=Q:3
+I4M>eHR^BbZ0HoW;J9khm73
+R1
+!s105 FIR_parallel_sv_unit
+S1
+R2
+w1703639379
+8C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_parallel.sv
+FC:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_parallel.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1703639380.000000
+!s107 C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_parallel.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_parallel.sv|
+!i113 1
+R4
+R5
+n@f@i@r_adder@tree
 vFIR_filter
 R0
 !s110 1703377571
@@ -40,24 +65,99 @@ R0
 !s100 BD_PdBG80`jj:QW<9zjT93
 IoaWi8fb?eEfb7dk00<dMf2
 R1
-!s105 FIR_sv_unit
+Z6 !s105 FIR_sv_unit
 S1
 R2
 w1703377570
-8C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR.sv
-FC:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR.sv
+Z7 8C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR.sv
+Z8 FC:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR.sv
 L0 8
 R3
 r1
 !s85 0
 31
 !s108 1703377571.000000
-!s107 C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR.sv|
+Z9 !s107 C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR.sv|
+Z10 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR.sv|
 !i113 1
 R4
 R5
 n@f@i@r_filter
+vFIR_filter_DirectForm
+R0
+!s110 1703638707
+!i10b 1
+!s100 cMKG347kUEoN_Oobfi`VC2
+I54Ac``zR_aXj>iVhf8T;83
+R1
+R6
+S1
+R2
+w1703634391
+R7
+R8
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1703638706.000000
+R9
+R10
+!i113 1
+R4
+R5
+n@f@i@r_filter_@direct@form
+vFIR_top
+R0
+!s110 1703634360
+!i10b 1
+!s100 OA0NRY3cB51:R;le^[lA52
+IUUFQRA7_k]?T2N9j]f<XS0
+R1
+!s105 FIR_top_sv_unit
+S1
+R2
+w1703634357
+8C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_top.sv
+FC:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_top.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1703634360.000000
+!s107 C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_top.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_top.sv|
+!i113 1
+R4
+R5
+n@f@i@r_top
+vtb_FIR_directForm
+R0
+!s110 1703633995
+!i10b 1
+!s100 eY8o?O9>8miRYZ9f?k<4;2
+I<LkWH20C?YL89?X:XV=O73
+R1
+Z11 !s105 FIR_tb_sv_unit
+S1
+R2
+w1703399479
+Z12 8C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_tb.sv
+Z13 FC:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_tb.sv
+Z14 L0 10
+R3
+r1
+!s85 0
+31
+!s108 1703633994.000000
+Z15 !s107 C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_tb.sv|
+Z16 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_tb.sv|
+!i113 1
+R4
+R5
+ntb_@f@i@r_direct@form
 vtb_FIR_test1
 R0
 !s110 1703377362
@@ -65,20 +165,20 @@ R0
 !s100 7Nm[iOX3B>FDg]L5jP4=C3
 Ijm]@`<R`Wz<2BZoW>h`^12
 R1
-!s105 FIR_tb_sv_unit
+R11
 S1
 R2
 w1703377360
-8C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_tb.sv
-FC:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_tb.sv
-L0 10
+R12
+R13
+R14
 R3
 r1
 !s85 0
 31
 !s108 1703377362.000000
-!s107 C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_tb.sv|
+R15
+R16
 !i113 1
 R4
 R5
