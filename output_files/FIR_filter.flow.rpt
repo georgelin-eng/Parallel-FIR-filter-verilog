@@ -1,5 +1,5 @@
 Flow report for FIR_filter
-Tue Dec 26 18:16:04 2023
+Tue Dec 26 18:31:29 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,25 +40,25 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Dec 26 18:16:04 2023       ;
+; Flow Status                     ; Successful - Tue Dec 26 18:31:29 2023       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; FIR_filter                                  ;
 ; Top-level Entity Name           ; FIR_top                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 33 / 56,480 ( < 1 % )                       ;
-; Total registers                 ; 62                                          ;
-; Total pins                      ; 65 / 268 ( 24 % )                           ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 2080                                        ;
+; Total pins                      ; 65                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                       ;
-; Total DSP Blocks                ; 4 / 156 ( 3 % )                             ;
-; Total HSSI RX PCSs              ; 0 / 6 ( 0 % )                               ;
-; Total HSSI PMA RX Deserializers ; 0 / 6 ( 0 % )                               ;
-; Total HSSI TX PCSs              ; 0 / 6 ( 0 % )                               ;
-; Total HSSI PMA TX Serializers   ; 0 / 6 ( 0 % )                               ;
-; Total PLLs                      ; 0 / 13 ( 0 % )                              ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 128                                         ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
 +---------------------------------+---------------------------------------------+
 
 
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/26/2023 18:14:26 ;
+; Start date & time ; 12/26/2023 18:31:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; FIR_filter          ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 104096148007027.170363966626096        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 104096148007027.170364067121684        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; FIR_top     ; Top        ;
@@ -96,10 +96,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4914 MB             ; 00:00:11                           ;
-; Fitter               ; 00:01:09     ; 1.0                     ; 7469 MB             ; 00:01:53                           ;
-; Assembler            ; 00:00:11     ; 1.0                     ; 4828 MB             ; 00:00:04                           ;
-; Total                ; 00:01:35     ; --                      ; --                  ; 00:02:08                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4939 MB             ; 00:00:12                           ;
+; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:12                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,8 +107,6 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; Laptop           ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -118,8 +114,6 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off FIR_filter -c FIR_filter
-quartus_fit --read_settings_files=off --write_settings_files=off FIR_filter -c FIR_filter
-quartus_asm --read_settings_files=off --write_settings_files=off FIR_filter -c FIR_filter
 
 
 

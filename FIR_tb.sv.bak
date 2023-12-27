@@ -13,7 +13,6 @@ module tb_FIR_directForm ();
     reg [31:0] x;
     reg [31:0] noise;
     reg [31:0] signal;
-    wire [31:0] y;
 
     // FIR module declaration
     FIR_adderTree DUT
