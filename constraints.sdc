@@ -1,4 +1,6 @@
 # Project: Parallel FIR Filter
 # Creator: George Lin
 
-create_clock -period 100 clk
+# set_units -time ns
+
+create_clock -period 10 clk
