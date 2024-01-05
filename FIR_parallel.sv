@@ -17,7 +17,6 @@ module FIR_adderTree  (
     reg [31:0] layer4Acc [order/32-1:0];
 
     // must be zero padded first
-    
     integer i, j;
     integer i0, i1, i2, i3, i4, i5;
 

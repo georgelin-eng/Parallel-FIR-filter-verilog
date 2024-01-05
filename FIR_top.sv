@@ -8,7 +8,7 @@ module FIR_top(
     reg[31:0] input_signal;
     reg[31:0] output_signalReg;
 
-    FIR_adderTree filter (clk, reset, input_signal, output_signal);
+    FIR_symmetric filter (clk, reset, input_signal, output_signal);
 
     always_ff @ (posedge clk) begin
         input_signal <= incoming;

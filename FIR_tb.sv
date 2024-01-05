@@ -13,20 +13,36 @@ module tb_FIR_directForm ();
     reg [31:0] x;
     reg [31:0] noise;
     reg [31:0] signal;
-    wire [31:0] y;
+    wire [31:0] y_symmetric;
+    wire [31:0] y_adderTree;
+    wire [31:0] y_directForm;
 
     // FIR module declaration
-    FIR_adderTree DUT
+    FIR_symmetric DUT1
     (
         .clk(clk), 
         .reset(reset),
         .incoming_signal_x (signal),
-        .output_signal_y (y)
+        .output_signal_y (y_symmetric)
+    );
+
+    FIR_adderTree DUT2
+    (
+        .clk(clk), 
+        .reset(reset),
+        .incoming_signal_x (signal),
+        .output_signal_y (y_adderTree)
+    );
+
+    FIR_filter_DirectForm DUT3
+    (
+        .clk(clk), 
+        .reset(reset),
+        .incoming_signal_x (signal),
+        .output_signal_y (y_directForm)
     );
     
-    /*
-    
-    */
+
     integer outfile0; //file descriptor
 
     initial begin
