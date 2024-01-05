@@ -1,22 +1,22 @@
-// `timescale 100ps / 1ps
-/*
-    Test1:
-
-    Filter coeff b0 is set to 1 and all others are set to 0. 
-    The output signal should precisely match up with the input signal
-
+/* Test Cases Used:
+    - Basic test case for expected operation 
+    - Edge case where noise is right on the stop band
+    - Impulse response
+    - 
 */
 
-module tb_FIR_directForm ();
+`include "params.v"
 
-    reg clk, reset;
-    reg [31:0] x;
-    reg [31:0] noise;
-    reg [31:0] signal;
-    wire [31:0] y_symmetric;
-    wire [31:0] y_adderTree;
-    wire [31:0] y_directForm;
-
+module tb_FIR ();
+    //parameter width coming from params.v
+    
+    reg              clk, reset;
+    reg  [width-1:0] noise;
+    reg  [width-1:0] signal;
+    wire [width-1:0] y_symmetric;
+    wire [width-1:0] y_adderTree;
+    wire [width-1:0] y_directForm;
+    
     // FIR module declaration
     FIR_symmetric DUT1
     (
@@ -34,39 +34,75 @@ module tb_FIR_directForm ();
         .output_signal_y (y_adderTree)
     );
 
-    FIR_filter_DirectForm DUT3
-    (
-        .clk(clk), 
-        .reset(reset),
-        .incoming_signal_x (signal),
-        .output_signal_y (y_directForm)
-    );
-    
+    task automatic reset_delayLine (ref clk, output reg reset);
+        #20;
+        @ (posedge clk) reset = 1; @ (posedge clk) reset = 0;
+    endtask
 
-    integer outfile0; //file descriptor
+
+
+
+
+    integer file_test1, file_test2, file_test3; //file descriptor
+
+    /* test_signal: tests basic operation of the FIR filter under expected conditions
+        FIR filter processes noisy singnal data composed of 
+        - 500   kHz base signal 
+        - 10000 kHz noise 
+        - 4000  kHz noise
+
+        The FIR coefficients are generated at a sampling rate of 15000 kHz with a stop band of frequencies above 600 kHz
+
+       test_impulse : tests filter response to an impulse function with amplitude of 10000
+       test_step    : tests filter response to an step function with amplitude of 800
+    */
+
+    initial begin
+        file_test1 = $fopen("test_signal.txt"  , "r");   
+        file_test2 = $fopen("test_impulse.txt" , "r");  
+        file_test3 = $fopen("test_step.txt"    , "r");   
+
+        reset_delayLine (clk, reset);
+        //read line by line.
+        while (! $feof(file_test1 )) begin //read until an "end of file" is reached.
+            $fscanf(file_test1 ,"%d\n",signal); //scan each line and get the value as an hexadecimal, use %b for binary and %d for decimal.
+            @ (posedge clk);
+        end 
+        
+        reset_delayLine (clk, reset);
+        // //read line by line.
+        while (! $feof(file_test2)) begin //read until an "end of file" is reached.
+            $fscanf(file_test2,"%d\n",signal); //scan each line and get the value as an hexadecimal, use %b for binary and %d for decimal.
+            @ (posedge clk);
+        end 
+
+        reset_delayLine (clk, reset);
+        while (! $feof(file_test3)) begin //read until an "end of file" is reached.
+            $fscanf(file_test3,"%d\n",signal); //scan each line and get the value as an hexadecimal, use %b for binary and %d for decimal.
+            @ (posedge clk);
+        end 
+
+
+        //once reading and writing is finished, close the file.
+        $fclose (file_test1);
+        $fclose (file_test2);
+        $fclose (file_test3);
+
+        $stop;
+    end
 
     initial begin
         // reset
         @ (posedge clk) reset = 1; @ (posedge clk) reset = 0;
 
-        outfile0=$fopen("test_signal.txt","r");   //"r" means reading and "w" means writing
-        //read line by line.
-        while (! $feof(outfile0)) begin //read until an "end of file" is reached.
-            $fscanf(outfile0,"%d\n",signal); //scan each line and get the value as an hexadecimal, use %b for binary and %d for decimal.
-            @ (posedge clk);
-        end 
 
-        //once reading and writing is finished, close the file.
-        $fclose(outfile0);
-
-        #10;
-        $stop;
     end
 
     initial forever begin
         clk = 0; #5;
         clk = 1; #5;
     end
-
 endmodule
+
+
 

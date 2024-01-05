@@ -4,131 +4,99 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "output_signal[0]",
+					"name" : "output_signal_y[0]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[1]",
+					"name" : "output_signal_y[1]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[2]",
+					"name" : "output_signal_y[2]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[3]",
+					"name" : "output_signal_y[3]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[4]",
+					"name" : "output_signal_y[4]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[5]",
+					"name" : "output_signal_y[5]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[6]",
+					"name" : "output_signal_y[6]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[7]",
+					"name" : "output_signal_y[7]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[8]",
+					"name" : "output_signal_y[8]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[9]",
+					"name" : "output_signal_y[9]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[10]",
+					"name" : "output_signal_y[10]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[11]",
+					"name" : "output_signal_y[11]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[12]",
+					"name" : "output_signal_y[12]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[13]",
+					"name" : "output_signal_y[13]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[14]",
+					"name" : "output_signal_y[14]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[15]",
+					"name" : "output_signal_y[15]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[16]",
+					"name" : "output_signal_y[16]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[17]",
+					"name" : "output_signal_y[17]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[18]",
+					"name" : "output_signal_y[18]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[19]",
+					"name" : "output_signal_y[19]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[20]",
+					"name" : "output_signal_y[20]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[21]",
+					"name" : "output_signal_y[21]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[22]",
+					"name" : "output_signal_y[22]",
 					"strict" : false
 				},
 				{
-					"name" : "output_signal[23]",
-					"strict" : false
-				},
-				{
-					"name" : "output_signal[24]",
-					"strict" : false
-				},
-				{
-					"name" : "output_signal[25]",
-					"strict" : false
-				},
-				{
-					"name" : "output_signal[26]",
-					"strict" : false
-				},
-				{
-					"name" : "output_signal[27]",
-					"strict" : false
-				},
-				{
-					"name" : "output_signal[28]",
-					"strict" : false
-				},
-				{
-					"name" : "output_signal[29]",
-					"strict" : false
-				},
-				{
-					"name" : "output_signal[30]",
-					"strict" : false
-				},
-				{
-					"name" : "output_signal[31]",
+					"name" : "output_signal_y[23]",
 					"strict" : false
 				},
 				{
@@ -136,131 +104,103 @@
 					"strict" : false
 				},
 				{
-					"name" : "incoming[0]",
+					"name" : "reset",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[1]",
+					"name" : "incoming_signal_x[0]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[2]",
+					"name" : "incoming_signal_x[1]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[3]",
+					"name" : "incoming_signal_x[2]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[4]",
+					"name" : "incoming_signal_x[3]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[5]",
+					"name" : "incoming_signal_x[4]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[6]",
+					"name" : "incoming_signal_x[5]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[7]",
+					"name" : "incoming_signal_x[6]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[8]",
+					"name" : "incoming_signal_x[7]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[9]",
+					"name" : "incoming_signal_x[8]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[10]",
+					"name" : "incoming_signal_x[9]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[11]",
+					"name" : "incoming_signal_x[10]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[12]",
+					"name" : "incoming_signal_x[11]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[13]",
+					"name" : "incoming_signal_x[12]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[14]",
+					"name" : "incoming_signal_x[13]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[15]",
+					"name" : "incoming_signal_x[14]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[16]",
+					"name" : "incoming_signal_x[15]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[17]",
+					"name" : "incoming_signal_x[16]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[18]",
+					"name" : "incoming_signal_x[17]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[19]",
+					"name" : "incoming_signal_x[18]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[20]",
+					"name" : "incoming_signal_x[19]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[21]",
+					"name" : "incoming_signal_x[20]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[22]",
+					"name" : "incoming_signal_x[21]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[23]",
+					"name" : "incoming_signal_x[22]",
 					"strict" : false
 				},
 				{
-					"name" : "incoming[24]",
-					"strict" : false
-				},
-				{
-					"name" : "incoming[25]",
-					"strict" : false
-				},
-				{
-					"name" : "incoming[26]",
-					"strict" : false
-				},
-				{
-					"name" : "incoming[27]",
-					"strict" : false
-				},
-				{
-					"name" : "incoming[28]",
-					"strict" : false
-				},
-				{
-					"name" : "incoming[29]",
-					"strict" : false
-				},
-				{
-					"name" : "incoming[30]",
-					"strict" : false
-				},
-				{
-					"name" : "incoming[31]",
+					"name" : "incoming_signal_x[23]",
 					"strict" : false
 				}
 			]

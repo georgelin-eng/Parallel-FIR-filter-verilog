@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FIR_filter
-Mon Jan 01 20:43:19 2024
+Wed Jan 03 23:08:14 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -15,33 +15,33 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis DSP Block Usage Summary
   9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: FIR_symmetric:filter
- 11. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[0].U0
- 12. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[1].U0
- 13. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[2].U0
- 14. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[3].U0
- 15. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[4].U0
- 16. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[5].U0
- 17. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[6].U0
- 18. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[7].U0
- 19. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[8].U0
- 20. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[9].U0
- 21. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[10].U0
- 22. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[11].U0
- 23. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[12].U0
- 24. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[13].U0
- 25. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[14].U0
- 26. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[15].U0
- 27. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[16].U0
- 28. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[17].U0
- 29. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[18].U0
- 30. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[19].U0
- 31. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[20].U0
- 32. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[21].U0
- 33. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[22].U0
- 34. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[23].U0
- 35. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[24].U0
- 36. Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[25].U0
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |FIR_symmetric
+ 11. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[0].U0
+ 12. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[1].U0
+ 13. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[2].U0
+ 14. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[3].U0
+ 15. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[4].U0
+ 16. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[5].U0
+ 17. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[6].U0
+ 18. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[7].U0
+ 19. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[8].U0
+ 20. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[9].U0
+ 21. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[10].U0
+ 22. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[11].U0
+ 23. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[12].U0
+ 24. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[13].U0
+ 25. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[14].U0
+ 26. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[15].U0
+ 27. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[16].U0
+ 28. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[17].U0
+ 29. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[18].U0
+ 30. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[19].U0
+ 31. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[20].U0
+ 32. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[21].U0
+ 33. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[22].U0
+ 34. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[23].U0
+ 35. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[24].U0
+ 36. Parameter Settings for User Entity Instance: tap:generate_FIR_taps[25].U0
  37. Post-Synthesis Netlist Statistics for Top Partition
  38. Elapsed Time Per Partition
  39. Analysis & Synthesis Messages
@@ -70,17 +70,17 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jan 01 20:43:19 2024       ;
+; Analysis & Synthesis Status     ; Successful - Wed Jan 03 23:08:14 2024       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; FIR_filter                                  ;
-; Top-level Entity Name           ; FIR_top                                     ;
+; Top-level Entity Name           ; FIR_symmetric                               ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 1728                                        ;
-; Total pins                      ; 65                                          ;
+; Total registers                 ; 1272                                        ;
+; Total pins                      ; 50                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 52                                          ;
+; Total DSP Blocks                ; 30                                          ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
@@ -96,7 +96,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; FIR_top            ; FIR_filter         ;
+; Top-level entity name                                                           ; FIR_symmetric      ; FIR_filter         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -185,19 +185,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
-; Maximum used               ; 12          ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
-;     Processor 5            ;   0.1%      ;
-;     Processor 6            ;   0.1%      ;
-;     Processor 7            ;   0.1%      ;
-;     Processor 8            ;   0.1%      ;
-;     Processors 9-12        ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -207,7 +202,7 @@ refer to the applicable agreement for further details.
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                        ; Library ;
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
 ; FIR_symmetric.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv ;         ;
-; fir_top.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/fir_top.sv       ;         ;
+; params.v                         ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/params.v         ;         ;
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
 
 
@@ -216,76 +211,78 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 1079      ;
+; Estimate of Logic utilization (ALMs needed) ; 760       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 1286      ;
+; Combinational ALUT usage for logic          ; 742       ;
 ;     -- 7 input functions                    ; 0         ;
 ;     -- 6 input functions                    ; 0         ;
 ;     -- 5 input functions                    ; 0         ;
 ;     -- 4 input functions                    ; 0         ;
-;     -- <=3 input functions                  ; 1286      ;
+;     -- <=3 input functions                  ; 742       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 1728      ;
+; Dedicated logic registers                   ; 1272      ;
 ;                                             ;           ;
-; I/O pins                                    ; 65        ;
+; I/O pins                                    ; 50        ;
 ;                                             ;           ;
-; Total DSP Blocks                            ; 52        ;
+; Total DSP Blocks                            ; 30        ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 1728      ;
-; Total fan-out                               ; 8881      ;
-; Average fan-out                             ; 2.78      ;
+; Maximum fan-out                             ; 1272      ;
+; Total fan-out                               ; 7184      ;
+; Average fan-out                             ; 3.35      ;
 +---------------------------------------------+-----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                       ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------+---------------+--------------+
-; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                        ; Entity Name   ; Library Name ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------+---------------+--------------+
-; |FIR_top                             ; 1286 (0)            ; 1728 (32)                 ; 0                 ; 52         ; 65   ; 0            ; |FIR_top                                                   ; FIR_top       ; work         ;
-;    |FIR_symmetric:filter|            ; 1286 (206)          ; 1696 (1696)               ; 0                 ; 52         ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter                              ; FIR_symmetric ; work         ;
-;       |tap:generate_FIR_taps[0].U0|  ; 46 (46)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[0].U0  ; tap           ; work         ;
-;       |tap:generate_FIR_taps[10].U0| ; 64 (64)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[10].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[12].U0| ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[12].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[13].U0| ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[13].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[14].U0| ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[14].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[15].U0| ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[15].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[16].U0| ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[16].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[17].U0| ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[17].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[18].U0| ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[18].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[19].U0| ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[19].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[1].U0|  ; 64 (64)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[1].U0  ; tap           ; work         ;
-;       |tap:generate_FIR_taps[20].U0| ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[20].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[21].U0| ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[21].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[22].U0| ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[22].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[23].U0| ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[23].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[24].U0| ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[24].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[25].U0| ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[25].U0 ; tap           ; work         ;
-;       |tap:generate_FIR_taps[2].U0|  ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[2].U0  ; tap           ; work         ;
-;       |tap:generate_FIR_taps[3].U0|  ; 46 (46)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[3].U0  ; tap           ; work         ;
-;       |tap:generate_FIR_taps[4].U0|  ; 128 (128)           ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[4].U0  ; tap           ; work         ;
-;       |tap:generate_FIR_taps[5].U0|  ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[5].U0  ; tap           ; work         ;
-;       |tap:generate_FIR_taps[6].U0|  ; 78 (78)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[6].U0  ; tap           ; work         ;
-;       |tap:generate_FIR_taps[7].U0|  ; 64 (64)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[7].U0  ; tap           ; work         ;
-;       |tap:generate_FIR_taps[8].U0|  ; 32 (32)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[8].U0  ; tap           ; work         ;
-;       |tap:generate_FIR_taps[9].U0|  ; 46 (46)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_top|FIR_symmetric:filter|tap:generate_FIR_taps[9].U0  ; tap           ; work         ;
-+--------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------+---------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                     ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name   ; Library Name ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+---------------+--------------+
+; |FIR_symmetric                    ; 742 (141)           ; 1272 (1272)               ; 0                 ; 30         ; 50   ; 0            ; |FIR_symmetric                              ; FIR_symmetric ; work         ;
+;    |tap:generate_FIR_taps[0].U0|  ; 25 (25)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[0].U0  ; tap           ; work         ;
+;    |tap:generate_FIR_taps[10].U0| ; 97 (97)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[10].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[12].U0| ; 45 (45)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[12].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[13].U0| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[13].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[14].U0| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[14].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[15].U0| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[15].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[16].U0| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[16].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[17].U0| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[17].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[18].U0| ; 40 (40)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[18].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[19].U0| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[19].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[1].U0|  ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[1].U0  ; tap           ; work         ;
+;    |tap:generate_FIR_taps[20].U0| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[20].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[21].U0| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[21].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[22].U0| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[22].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[23].U0| ; 63 (63)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[23].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[24].U0| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[24].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[25].U0| ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[25].U0 ; tap           ; work         ;
+;    |tap:generate_FIR_taps[2].U0|  ; 79 (79)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[2].U0  ; tap           ; work         ;
+;    |tap:generate_FIR_taps[3].U0|  ; 25 (25)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[3].U0  ; tap           ; work         ;
+;    |tap:generate_FIR_taps[4].U0|  ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[4].U0  ; tap           ; work         ;
+;    |tap:generate_FIR_taps[5].U0|  ; 25 (25)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[5].U0  ; tap           ; work         ;
+;    |tap:generate_FIR_taps[6].U0|  ; 25 (25)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[6].U0  ; tap           ; work         ;
+;    |tap:generate_FIR_taps[7].U0|  ; 79 (79)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[7].U0  ; tap           ; work         ;
+;    |tap:generate_FIR_taps[8].U0|  ; 25 (25)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[8].U0  ; tap           ; work         ;
+;    |tap:generate_FIR_taps[9].U0|  ; 25 (25)             ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |FIR_symmetric|tap:generate_FIR_taps[9].U0  ; tap           ; work         ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------+
-; Analysis & Synthesis DSP Block Usage Summary  ;
-+---------------------------------+-------------+
-; Statistic                       ; Number Used ;
-+---------------------------------+-------------+
-; Two Independent 18x18           ; 26          ;
-; Independent 18x18 plus 36       ; 15          ;
-; Sum of two 18x18                ; 11          ;
-; Total number of DSP blocks      ; 52          ;
-;                                 ;             ;
-; Fixed Point Unsigned Multiplier ; 63          ;
-+---------------------------------+-------------+
++---------------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary            ;
++-------------------------------------------+-------------+
+; Statistic                                 ; Number Used ;
++-------------------------------------------+-------------+
+; Two Independent 18x18                     ; 9           ;
+; Sum of two 18x18                          ; 9           ;
+; Independent 27x27                         ; 12          ;
+; Total number of DSP blocks                ; 30          ;
+;                                           ;             ;
+; Fixed Point Unsigned Multiplier           ; 39          ;
+; Fixed Point Dedicated Pre-Adder           ; 11          ;
+; Fixed Point Dedicated Coefficient Storage ; 11          ;
+; Fixed Point Dedicated Output Adder Chain  ; 5           ;
++-------------------------------------------+-------------+
 
 
 +------------------------------------------------------+
@@ -293,8 +290,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1728  ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 1272  ;
+; Number of registers using Synchronous Clear  ; 1272  ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -303,280 +300,275 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter                                                   ;
-+-----------------+----------------------------------------------------------------------------------+----------------+
-; Parameter Name  ; Value                                                                            ; Type           ;
-+-----------------+----------------------------------------------------------------------------------+----------------+
-; order           ; 53                                                                               ; Signed Integer ;
-; N               ; 26                                                                               ; Signed Integer ;
-; STAGES_NUM      ; 5                                                                                ; Signed Integer ;
-; ADDER_TREE_SIZE ; 32                                                                               ; Signed Integer ;
-; FIRfilterCoeffs ; (-764,-965,-1236,-1588,-2004,-2443,-2832,-3071,-3041,-2608,-1637,0,2405,5646,974 ; Array/Record   ;
-; FIRfilterCoeffs ; 7,14676,20348,26618,33288,40120,46842,53167,58813,63516,67051,69245,69989,69245, ;                ;
-; FIRfilterCoeffs ; 67051,63516,58813,53167,46842,40120,33288,26618,20348,14676,9747,5646,2405,0,-16 ;                ;
-;                 ; 37,-2608,-3041,-3071,-2832,-2443,-2004,-1588,-1236,-965,-764)                    ;                ;
-+-----------------+----------------------------------------------------------------------------------+----------------+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |FIR_symmetric ;
++-----------------+-------+-----------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                ;
++-----------------+-------+-----------------------------------------------------+
+; N               ; 26    ; Signed Integer                                      ;
+; STAGES_NUM      ; 5     ; Signed Integer                                      ;
+; ADDER_TREE_SIZE ; 32    ; Signed Integer                                      ;
++-----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[0].U0 ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; coeff          ; -764  ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[0].U0 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; coeff          ; -3    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[1].U0 ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; coeff          ; -965  ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[1].U0 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; coeff          ; -4    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[2].U0 ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; coeff          ; -1236 ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[2].U0 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; coeff          ; -5    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[3].U0 ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; coeff          ; -1588 ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[3].U0 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; coeff          ; -6    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[4].U0 ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; coeff          ; -2004 ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[4].U0 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; coeff          ; -8    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[5].U0 ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; coeff          ; -2443 ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[5].U0 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; coeff          ; -10   ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[6].U0 ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; coeff          ; -2832 ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[6].U0 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; coeff          ; -11   ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[7].U0 ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; coeff          ; -3071 ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[7].U0 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; coeff          ; -12   ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[8].U0 ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; coeff          ; -3041 ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[8].U0 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; coeff          ; -12   ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[9].U0 ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; coeff          ; -2608 ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[9].U0 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; coeff          ; -10   ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[10].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; -1637 ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[10].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; -6    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[11].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 0     ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[11].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 0     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[12].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 2405  ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[12].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 9     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[13].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 5646  ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[13].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 22    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[14].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 9747  ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[14].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 38    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[15].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 14676 ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[15].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 57    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[16].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 20348 ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[16].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 79    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[17].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 26618 ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[17].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 104   ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[18].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 33288 ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[18].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 130   ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[19].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 40120 ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[19].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 157   ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[20].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 46842 ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[20].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 183   ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[21].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 53167 ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[21].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 208   ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[22].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 58813 ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[22].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 230   ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[23].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 63516 ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[23].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 248   ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[24].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 67051 ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[24].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 262   ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: FIR_symmetric:filter|tap:generate_FIR_taps[25].U0 ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; coeff          ; 69245 ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tap:generate_FIR_taps[25].U0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; coeff          ; 270   ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -585,18 +577,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 1728                        ;
-;     plain             ; 1728                        ;
-; arriav_lcell_comb     ; 1286                        ;
-;     arith             ; 800                         ;
-;         2 data inputs ; 800                         ;
-;     shared            ; 486                         ;
-;         2 data inputs ; 18                          ;
-;         3 data inputs ; 468                         ;
-; arriav_mac            ; 52                          ;
-; boundary_port         ; 65                          ;
+; arriav_ff             ; 1272                        ;
+;     SCLR              ; 1272                        ;
+; arriav_lcell_comb     ; 742                         ;
+;     arith             ; 445                         ;
+;         0 data inputs ; 9                           ;
+;         1 data inputs ; 32                          ;
+;         2 data inputs ; 404                         ;
+;     shared            ; 297                         ;
+;         1 data inputs ; 10                          ;
+;         2 data inputs ; 70                          ;
+;         3 data inputs ; 217                         ;
+; arriav_mac            ; 30                          ;
+; boundary_port         ; 50                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.10                        ;
+; Max LUT depth         ; 7.50                        ;
 ; Average LUT depth     ; 3.74                        ;
 +-----------------------+-----------------------------+
 
@@ -606,7 +601,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -616,63 +611,74 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Jan 01 20:43:03 2024
+    Info: Processing started: Wed Jan 03 23:07:59 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FIR_filter -c FIR_filter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file fir_addertree.sv
+    Info (12023): Found entity 1: FIR_adderTree File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_adderTree.sv Line: 3
 Info (12021): Found 2 design units, including 2 entities, in source file fir_symmetric.sv
-    Info (12023): Found entity 1: FIR_symmetric File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 3
-    Info (12023): Found entity 2: tap File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 109
-Info (12021): Found 1 design units, including 1 entities, in source file fir_direct.sv
-    Info (12023): Found entity 1: FIR_filter_DirectForm File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_direct.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file fir_parallel.sv
-    Info (12023): Found entity 1: FIR_adderTree File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_parallel.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file fir_tb.sv
-    Info (12023): Found entity 1: tb_FIR_directForm File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_tb.sv Line: 10
-Warning (12019): Can't analyze file -- file clkSync.sv is missing
-Info (12021): Found 1 design units, including 1 entities, in source file fir_top.sv
-    Info (12023): Found entity 1: FIR_top File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/fir_top.sv Line: 1
-Info (12127): Elaborating entity "FIR_top" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at fir_top.sv(9): object "output_signalReg" assigned a value but never read File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/fir_top.sv Line: 9
-Info (12128): Elaborating entity "FIR_symmetric" for hierarchy "FIR_symmetric:filter" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/fir_top.sv Line: 11
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[0].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[1].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[2].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[3].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[4].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[5].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[6].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[7].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[8].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[9].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[10].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[11].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[12].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[13].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[14].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[15].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[16].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[17].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[18].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[19].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[20].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[21].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[22].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[23].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[24].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (12128): Elaborating entity "tap" for hierarchy "FIR_symmetric:filter|tap:generate_FIR_taps[25].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 55
-Info (286030): Timing-Driven Synthesis is running
+    Info (12023): Found entity 1: FIR_symmetric File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 4
+    Info (12023): Found entity 2: tap File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 90
+Info (12127): Elaborating entity "FIR_symmetric" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(49): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 49
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[0].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[1].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[2].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[3].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[4].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[5].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[6].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[7].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[11].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[12].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[13].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[14].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[15].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[16].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[17].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[18].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[19].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[20].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[21].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[22].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[23].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[24].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[25].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3131 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 33 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 3014 logic cells
-    Info (21062): Implemented 52 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4920 megabytes
-    Info: Processing ended: Mon Jan 01 20:43:19 2024
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:10
+Info (21057): Implemented 2094 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 26 input pins
+    Info (21059): Implemented 24 output pins
+    Info (21061): Implemented 2014 logic cells
+    Info (21062): Implemented 30 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 4869 megabytes
+    Info: Processing ended: Wed Jan 03 23:08:14 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:12
 
 

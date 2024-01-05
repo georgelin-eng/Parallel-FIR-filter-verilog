@@ -1,12 +1,14 @@
+`include "params.v"
+
 module FIR_top(
     input clk,
-    input [31:0] incoming,
-    output [31:0] output_signal
+    input  [width-1:0] incoming,
+    output [width-1:0] output_signal
 );
     wire reset;
 
-    reg[31:0] input_signal;
-    reg[31:0] output_signalReg;
+    reg[width-1:0] input_signal;
+    reg[width-1:0] output_signalReg;
 
     FIR_symmetric filter (clk, reset, input_signal, output_signal);
 

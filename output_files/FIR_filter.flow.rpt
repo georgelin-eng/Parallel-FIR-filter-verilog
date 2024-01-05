@@ -1,5 +1,5 @@
 Flow report for FIR_filter
-Mon Jan 01 20:46:48 2024
+Wed Jan 03 23:11:27 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,19 +40,19 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Jan 01 20:46:35 2024       ;
+; Flow Status                     ; Successful - Wed Jan 03 23:11:15 2024       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; FIR_filter                                  ;
-; Top-level Entity Name           ; FIR_top                                     ;
+; Top-level Entity Name           ; FIR_symmetric                               ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 959 / 56,480 ( 2 % )                        ;
-; Total registers                 ; 1919                                        ;
-; Total pins                      ; 65 / 268 ( 24 % )                           ;
+; Logic utilization (in ALMs)     ; 565 / 56,480 ( 1 % )                        ;
+; Total registers                 ; 1272                                        ;
+; Total pins                      ; 50 / 268 ( 19 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                       ;
-; Total DSP Blocks                ; 52 / 156 ( 33 % )                           ;
+; Total DSP Blocks                ; 30 / 156 ( 19 % )                           ;
 ; Total HSSI RX PCSs              ; 0 / 6 ( 0 % )                               ;
 ; Total HSSI PMA RX Deserializers ; 0 / 6 ( 0 % )                               ;
 ; Total HSSI TX PCSs              ; 0 / 6 ( 0 % )                               ;
@@ -67,28 +67,28 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/01/2024 20:43:04 ;
+; Start date & time ; 01/03/2024 23:08:00 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; FIR_filter          ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 104096148007027.170416698327212        ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; FIR_top     ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; FIR_top     ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; FIR_top     ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; FIR_top                                ; FIR_filter    ; --          ; --         ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                          ;
++-------------------------------------+----------------------------------------+---------------+---------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+---------------+------------+
+; COMPILER_SIGNATURE_ID               ; 104096148007027.170434847927156        ; --            ; --            ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --            ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --            ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; FIR_symmetric ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; FIR_symmetric ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; FIR_symmetric ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --            ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --            ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --            ; --         ;
+; TOP_LEVEL_ENTITY                    ; FIR_symmetric                          ; FIR_filter    ; --            ; --         ;
++-------------------------------------+----------------------------------------+---------------+---------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -96,11 +96,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4920 MB             ; 00:00:10                           ;
-; Fitter               ; 00:03:00     ; 1.1                     ; 7445 MB             ; 00:05:24                           ;
-; Assembler            ; 00:00:11     ; 1.0                     ; 4866 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:12     ; 3.3                     ; 5332 MB             ; 00:00:23                           ;
-; Total                ; 00:03:38     ; --                      ; --                  ; 00:06:03                           ;
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4869 MB             ; 00:00:11                           ;
+; Fitter               ; 00:02:47     ; 1.1                     ; 7525 MB             ; 00:05:35                           ;
+; Assembler            ; 00:00:10     ; 1.0                     ; 4856 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:10     ; 2.7                     ; 5316 MB             ; 00:00:15                           ;
+; Total                ; 00:03:21     ; --                      ; --                  ; 00:06:06                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
