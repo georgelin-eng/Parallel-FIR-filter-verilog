@@ -1,10 +1,10 @@
+`include "params.v"
+
 module FIR_filter_DirectForm (
     input clk, 
     input reset,
-	input [31:0] incoming_signal_x, 
-    output [31:0] output_signal_y);
-
-    reg [31:0] acc_signal;
+	input  signed [width-1:0] incoming_signal_x, 
+    output reg  [width-1:0] output_signal_y);
 
     /* FIR filter parameters: 
         order - number of FIR filter coefficients
@@ -15,68 +15,9 @@ module FIR_filter_DirectForm (
 
                 set to 0 because anything else is wrong right now. Find another way to fix offsets
     */
-
-    parameter order = 53;
-    parameter scale = 0; 
-    parameter int FIRfilterCoeffs [order] = 
-    '{
-        -764 ,
-        -965 ,
-        -1236 ,
-        -1588 ,
-        -2004 ,
-        -2443 ,
-        -2832 ,
-        -3071 ,
-        -3041 ,
-        -2608 ,
-        -1637 ,
-        0 ,
-        2405 ,
-        5646 ,
-        9747 ,
-        14676 ,
-        20348 ,
-        26618 ,
-        33288 ,
-        40120 ,
-        46842 ,
-        53167 ,
-        58813 ,
-        63516 ,
-        67051 ,
-        69245 ,
-        69989 ,
-        69245 ,
-        67051 ,
-        63516 ,
-        58813 ,
-        53167 ,
-        46842 ,
-        40120 ,
-        33288 ,
-        26618 ,
-        20348 ,
-        14676 ,
-        9747 ,
-        5646 ,
-        2405 ,
-        0 ,
-        -1637 ,
-        -2608 ,
-        -3041 ,
-        -3071 ,
-        -2832 ,
-        -2443 ,
-        -2004 ,
-        -1588 ,
-        -1236 ,
-        -965 ,
-        -764
-    };
     
-	reg [31:0] delayLine [order-1:0];      // 32 bit registers used as buffers to store incoming data for processing
-    reg [31:0] multiplyResult [order-1:0]; // 32 bit wires used to carry the outputs of the multiply stage in order to feed into an adder chain
+	reg [width-1:0] delayLine [order-1:0];      // 32 bit registers used as buffers to store incoming data for processing
+    reg [width-1:0] multiplyResult [order-1:0]; // 32 bit wires used to carry the outputs of the multiply stage in order to feed into an adder chain
 
     /* update buffer stage with initialization logic: 
         initialize registers to zero to avoid undefined outputs in the accumulation stage
@@ -125,13 +66,10 @@ module FIR_filter_DirectForm (
     end
 
     always_comb begin
-        acc_signal = 0;
+        output_signal_y = 0;
         for (k = 0; k < order; k++) begin
-            acc_signal += multiplyResult[k];
+            output_signal_y += multiplyResult[k];
         end
     end
 
-    // output signal is a scaled down version of the accumulated signal to account for the initial scaling up down
-    assign output_signal_y = acc_signal >>> scale;
-  
 endmodule

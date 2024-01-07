@@ -5,7 +5,7 @@ module FIR_symmetric(
     input clk,
     input reset,
     input      [width-1:0] incoming_signal_x, 
-    output reg [width-1:0] output_signal_y);
+    output reg  [width-1:0] output_signal_y);
 
 
     parameter N = (order - 1) / 2;

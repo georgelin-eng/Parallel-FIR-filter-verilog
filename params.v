@@ -1,3 +1,5 @@
+// The FIR coefficients are generated at a sampling rate of 15000 kHz with a stop band of frequencies above 600 kHz
+
 parameter width = 24;
 parameter order = 53;
 

@@ -3,8 +3,8 @@
 module FIR_adderTree  (
     input clk, 
     input reset,
-	input  [width-1:0] incoming_signal_x, 
-    output [width-1:0] output_signal_y);
+	input  signed [width-1:0] incoming_signal_x, 
+    output  [width-1:0] output_signal_y);
 
 
     // parameter order = 53;

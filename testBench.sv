@@ -32,12 +32,23 @@ endclass
 
 
 class monitor
+    
 endclass
 
 class scoreboard
+
+
 endclass
 
 class env
+    driver      d0;
+    monitor     m0;
+    generator   g0;
+    scoreboard  s0;
+
+
+    
+
 endclass
 
 class test
