@@ -69,10 +69,10 @@ module tb_FIR ();
             
             $fwrite(log_file_handle, "[%0t] Ref: %d, Adder Tree: %d, Symmetric: %d\n", $time, y_directForm, y_adderTree, y_symmetric);
             $display(                "[%0t] Ref: %d, Adder Tree: %d, Symmetric: %d\n", $time, y_directForm, y_adderTree, y_symmetric);
-            
+
             // Stop simulation if any model does not match the reference "golden model" of the direct form implementation
             if (y_adderTree != y_directForm) begin 
-                $display ("Check Symmetric Implementation");  
+                $display ("Check Adder Tree Implementation");  
                 $stop; 
             end
             if (y_symmetric != y_directForm) begin 
