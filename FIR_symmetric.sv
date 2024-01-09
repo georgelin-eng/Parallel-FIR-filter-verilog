@@ -7,6 +7,14 @@ module FIR_symmetric(
     input      [width-1:0] incoming_signal_x, 
     output reg  [width-1:0] output_signal_y);
 
+    // Hardcoding a buffer to reduce fanout on clk edges
+    // wire clk1 /*synthesis keep*/; 
+    // wire clk2 /*synthesis keep*/;
+    // wire clk3 /*synthesis keep*/;
+
+    // assign clk1 = ~clk; 
+    // assign clk2 = ~clk1;
+    // assign clk3 = ~clk1;
 
     parameter N = (order - 1) / 2;
     parameter STAGES_NUM = $clog2(N);
@@ -17,7 +25,7 @@ module FIR_symmetric(
     
     int i, k;
 
-    always_ff @( posedge clk ) begin
+    always_ff @( posedge clk) begin
         if (reset) begin
             for (i = 0; i < order; i++) begin
                 delayLine[i] <= 0;

@@ -1,19 +1,10 @@
-{C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_adderTree.sv} {1 {vlog -work work -sv -stats=none {C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_adderTree.sv}
+{C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_tb.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling package FIR_adderTree_sv_unit
--- Compiling module FIR_adderTree
+-- Compiling package FIR_tb_sv_unit
+-- Compiling module tb_FIR
 
 Top level modules:
-	FIR_adderTree
-
-} {} {}} {C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv} {1 {vlog -work work -sv -stats=none {C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling package FIR_symmetric_sv_unit
--- Compiling module FIR_symmetric
--- Compiling module tap
-
-Top level modules:
-	FIR_symmetric
+	tb_FIR
 
 } {} {}} {C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_direct.sv} {1 {vlog -work work -sv -stats=none {C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_direct.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FIR_filter
-Wed Jan 03 23:08:14 2024
+Mon Jan 08 20:12:30 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -70,7 +70,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Jan 03 23:08:14 2024       ;
+; Analysis & Synthesis Status     ; Successful - Mon Jan 08 20:12:30 2024       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; FIR_filter                                  ;
 ; Top-level Entity Name           ; FIR_symmetric                               ;
@@ -95,13 +95,17 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
 ; Top-level entity name                                                           ; FIR_symmetric      ; FIR_filter         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                ; Off                ;
+; Use smart compilation                                                           ; On                 ; Off                ;
+; Maximum processors allowed for parallel compilation                             ; 12                 ;                    ;
+; Restructure Multiplexers                                                        ; Off                ; Auto               ;
+; Remove Duplicate Registers                                                      ; Off                ; On                 ;
+; Optimization Technique                                                          ; Speed              ; Balanced           ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; On                 ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
 ; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
 ; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
 ; Preserve fewer node names                                                       ; On                 ; On                 ;
@@ -122,7 +126,6 @@ refer to the applicable agreement for further details.
 ; NOT Gate Push-Back                                                              ; On                 ; On                 ;
 ; Power-Up Don't Care                                                             ; On                 ; On                 ;
 ; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
 ; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
 ; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
 ; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
@@ -130,11 +133,9 @@ refer to the applicable agreement for further details.
 ; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
 ; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
 ; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
 ; Carry Chain Length                                                              ; 70                 ; 70                 ;
 ; Auto Carry Chains                                                               ; On                 ; On                 ;
 ; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
 ; Auto ROM Replacement                                                            ; On                 ; On                 ;
 ; Auto RAM Replacement                                                            ; On                 ; On                 ;
 ; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
@@ -601,7 +602,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -611,63 +612,64 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Jan 03 23:07:59 2024
+    Info: Processing started: Mon Jan 08 20:12:12 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FIR_filter -c FIR_filter
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (16303): Aggressive Performance optimization mode selected -- timing performance will be prioritized at the potential cost of increased logic area and compilation time
+Info (20032): Parallel compilation is enabled and will use up to 12 processors
 Info (12021): Found 1 design units, including 1 entities, in source file fir_addertree.sv
     Info (12023): Found entity 1: FIR_adderTree File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_adderTree.sv Line: 3
 Info (12021): Found 2 design units, including 2 entities, in source file fir_symmetric.sv
     Info (12023): Found entity 1: FIR_symmetric File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 4
-    Info (12023): Found entity 2: tap File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 90
+    Info (12023): Found entity 2: tap File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 98
 Info (12127): Elaborating entity "FIR_symmetric" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(49): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 49
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[0].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[1].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[2].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[3].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[4].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[5].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[6].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[7].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[11].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[12].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[13].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[14].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[15].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[16].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[17].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[18].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[19].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[20].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[21].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[22].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[23].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[24].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
-Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[25].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 44
-Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(96): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 96
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(57): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 57
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[0].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[1].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[2].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[3].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[4].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[5].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[6].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[7].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[11].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[12].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[13].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[14].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[15].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[16].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[17].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[18].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[19].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[20].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[21].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[22].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[23].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[24].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (12128): Elaborating entity "tap" for hierarchy "tap:generate_FIR_taps[25].U0" File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at FIR_symmetric.sv(104): truncated value with size 32 to match size of target (24) File: C:/Users/flipa/OneDrive - UBC/Projects/Parallel-FIR-filter-verilog/FIR_symmetric.sv Line: 104
+Info (17026): Resynthesizing 0 WYSIWYG logic cells and I/Os using "speed" technology mapper which leaves 0 WYSIWYG logic cells and I/Os untouched
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 2094 device resources after synthesis - the final resource count might be different
@@ -675,10 +677,10 @@ Info (21057): Implemented 2094 device resources after synthesis - the final reso
     Info (21059): Implemented 24 output pins
     Info (21061): Implemented 2014 logic cells
     Info (21062): Implemented 30 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4869 megabytes
-    Info: Processing ended: Wed Jan 03 23:08:14 2024
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:12
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 4942 megabytes
+    Info: Processing ended: Mon Jan 08 20:12:30 2024
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:13
 
 

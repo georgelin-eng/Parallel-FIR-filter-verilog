@@ -55,11 +55,11 @@ module tb_FIR ();
     (
         integer file_handle, 
         integer log_file_handle, 
-        string file_name, 
-        string log_file_name,
-        ref [width-1:0] signal);
+        string  file_name, 
+        string  log_file_name,
+        ref     [width-1:0] signal);
 
-        file_handle     = $fopen(file_name, "r");  
+        file_handle     = $fopen(file_name,     "r");  
         log_file_handle = $fopen(log_file_name, "w");  
 
 
@@ -82,6 +82,7 @@ module tb_FIR ();
         end 
 
         $fclose (file_handle);
+        $display ("Passed: ", file_name);
     endtask
 
     initial begin
@@ -94,6 +95,7 @@ module tb_FIR ();
         reset_delayLine(clk, reset);
         run_test (file_handle, log_file_handle, "test_step.txt"  , "log_file.txt", signal);
 
+        $display("** Passed All Tests ** ");
         $stop;
     end
 

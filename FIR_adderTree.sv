@@ -1,4 +1,4 @@
-`include "params.v"
+// `include "params.v"
 
 module FIR_adderTree  (
     input clk, 
@@ -6,8 +6,6 @@ module FIR_adderTree  (
 	input  signed [width-1:0] incoming_signal_x, 
     output  [width-1:0] output_signal_y);
 
-
-    // parameter order = 53;
 
     parameter STAGES_NUM = $clog2(order);
     parameter ADDER_TREE_SIZE = 2 ** STAGES_NUM;
