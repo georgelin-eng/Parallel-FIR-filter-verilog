@@ -1,0 +1,15 @@
+import numpy as np
+
+# Define the 2D array
+array_2d = np.array([
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+    [13, 14, 15, 16]
+])
+
+# Flatten the array and take every 3rd entry
+every_third_entry = array_2d.flatten()[::-3]
+
+print("Every 3rd entry overall:")
+print(every_third_entry)
