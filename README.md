@@ -44,4 +44,8 @@ The FIR filter algorithm used in the design, Parks-McClellan, produces symmetric
 ![image](https://github.com/user-attachments/assets/c01bb07c-1b79-4e25-9d87-857023852c45)
 
 ### Adder Tree Accumulators
+This takes the critical path of N accumulators and changes it to be a log2(N) path. If the number of taps used is not an even power of 2, the inputs to some adders will be zero. 
+
+![image](https://github.com/user-attachments/assets/845bc49d-4e3e-4789-baec-adaa3a9154db)
+ 
 
